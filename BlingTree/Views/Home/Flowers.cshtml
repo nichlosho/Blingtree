@@ -3,6 +3,10 @@
     ViewData["Title"] = "Home";
 }
 
+@{
+    ViewData["Title"] = "Home";
+}
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -27,37 +31,16 @@
             <nav id="nav">
                 <ul>
                     <li class="current"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <!--
-                    <li>
-                        <a href="#">Dropdown</a>
-                        <ul>
-                            <li><a href="#">Lorem ipsum</a></li>
-                            <li><a href="#">Magna veroeros</a></li>
-                            <li><a href="#">Etiam nisl</a></li>
-                            <li>
-                                <a href="#">Sed consequat</a>
-                                <ul>
-                                    <li><a href="#">Lorem dolor</a></li>
-                                    <li><a href="#">Amet consequat</a></li>
-                                    <li><a href="#">Magna phasellus</a></li>
-                                    <li><a href="#">Etiam nisl</a></li>
-                                    <li><a href="#">Sed feugiat</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Nisl tempus</a></li>
-                        </ul>
-                    </li>
-                    -->
                     <li><a asp-area="" asp-controller="Home" asp-action="Flowers">Flowers</a></li>
+                    <li><a href="#footer">About Us</a></li>
                 </ul>
             </nav>
 
         </section>
 
-
-    <!-- Main -->
+          <!-- Main -->
     <section id="main" class="wrapper style2">
-        <div class="title">Left Sidebar</div>
+        <div class="title">Our Collections</div>
         <div class="container">
             <div class="row gtr-150">
                 <div class="col-2 col-12-medium">
@@ -66,7 +49,7 @@
                     <div id="sidebar">
                         <section class="box">
                             <header>
-                                <h2>Magna diam vehicula</h2>
+                                <h2>Categories</h2>
                             </header>
                             <ul class="style3">
                                 <li><a href="#">Nulla iaculis</a></li>
@@ -84,32 +67,74 @@
                 <div class="col-10 col-12-medium imp-medium">
                     <!-- Features -->
                     <section id="features">
-                        <header class="style1">
-                            <h2>Dolor consequat feugiat amet veroeros</h2>
-                            <p>Feugiat dolor nullam orci pretium phasellus justo</p>
-                        </header>
                         <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
                             @foreach (var item in Model)
                             {
                                 <div>
                                     <div class="uk-card uk-card-default uk-card-body uk-card-hover">
-                                        <img src="@item?.Image?[0]" alt="Flowers" height="300" />
+                                        <img src="@item?.Image?[0]" alt="Flowers" height="100" />
                                         <h3 class="uk-card-title">@item.Name</h3>
                                         <p class="uk-card-title">@item.Price</p>
-                                        <li><a href="#" class="button style1 small">Get Started</a></li>
+                                        <li><a href="#" class="button style1 small">More details</a></li>
                                     </div>
                                 </div>
                             }
                         </div>
-                        <ul class="actions special">
-                            <li><a href="#" class="button style1 large">Get Started</a></li>
-                            <li><a href="#" class="button style2 large">More Info</a></li>
-                        </ul>
                     </section>
                 </div>
             </div>
         </div>
     </section>
+
+        <!-- Footer -->
+        <section id="footer" class="wrapper">
+            <div class="title">Contact Us!</div>
+            <div class="container">
+                <div class="row">
+                    <!-- Contact -->
+                    <section class="feature-list small">
+                        <div class="row">
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-home">Store Address</h3>
+                                    <p>
+                                        Taman mestra lot 50, <br />
+                                        GF Jalan Kk Hight School Penampang lama, <br />
+                                        Kota Kinabalu, Malaysia
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-comment">Social</h3>
+                                    <p>
+                                        <a href="https://www.facebook.com/people/Bling-Tree-Premium-Gifts-and-Florist/100063624906407/">FaceBook</a><br />
+                                        <a href="https://www.instagram.com/bling.tree/">Instagram</a>
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-envelope">Phone</h3>
+                                    <p>
+                                        +60 17-836 6149
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-phone">WhatsApp</h3>
+                                    <p>
+                                        <a href="http://wa.link/zadzlz" class="button style2 large">Open WhatsApp</a>
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- Scripts -->
