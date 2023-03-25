@@ -1,19 +1,124 @@
 ﻿@model IEnumerable<Item>
 @{
-    ViewData["Title"] = "Flowers";
+    ViewData["Title"] = "Home";
 }
-<h1>@ViewData["Title"]</h1>
 
-<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
-    @foreach (var item in Model)
-    {
-        <div>
-            <div class="uk-card uk-card-default uk-card-body uk-card-hover">
-                <img src="@item?.Image?[0]" alt="Flowers" height="300" />
-                <h3 class="uk-card-title">@item.Name</h3>
-                <p class="uk-card-title">@item.Price</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Escape Velocity by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/css/main.css" />
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header" class="wrapper">
+
+            <!-- Logo -->
+            <div id="logo">
+                <img src="https://lh3.googleusercontent.com/2RhcPn9zYXmVUoXPAp7H-97OS7Wj6qJoiJOzb4GS7Q3YVJKhWFi5Q_H6aK4eYDcyVXVHn6cFSJZ7F2XmKo-WSHRehud3J8bD80XpnRoMqSZW_o8f909dSO6MxB_VSSovCBJKGh3CbPkGI8J8rPG9V51-r7btbnZN7RXIp9QB5rZGwxsixjAHOzdw03Xzq2MbvNdvvUVl3p9qPEhU0tITrPbsv-cJWD-71_0pxpnwBNWagTeWFxo8l70R3D-lGr-m08rZ5lfCUopBckas6YNmRsGdXpLfMr-LDfrGJANznsEP84qMwauuDxovsC6eQ1RLFLxqigBQTxEMiMnV1UR_EoFxr4yrNL-EsYgEWeJfdgPr2ArGSGYN2EbikV8N43lT0UiptRSpSh4DztSemf7kkDMGisKl9wb_5SzmDcKyyKCRH-nCEYYfsevtp2TBUsJVjjTd0L0hV1JOuL2ISKjrIolCMgW0LVAQ2g0na_OMQGs3_3r12YfOE3pzKGiazeC9AjIvHRU4wPlTicjWn8SCzwNfWn-l0XTVd10P5LNrfozZlplNkjHK-xpJANZuO3HAjYOyLxq-Ac3rohqzEJJti9Awnb-aQz8hovBccUm-hD1A2VwGEuXObtf8ONxKgacbU7Pu7XyJczP-9Y3dOqJ8tibYQnntk2avV0BmXk_QWOI7Yd_HG3Fs2gphSVCxMP21jRTDZbtGDG1GnCe6DyjNh7hO9yjQwbmhLod91XbpgwOqNXtYWJODMonVvtakEcVptLo0QhvhCIahuaHwP4GM94GMGYVULlMibA1dBVg9upDR0CmE8Qk4kPqnfpe_X6OJ_9hy3UULuNP9LxrpXN3bmJUYoZyBJuGJdqYOcgT-lMEjejDMB9Qm5cJuOPsiulTCnwi2SAszTpCctVRCZS1MjvT-Ik9-YXIN9lEHKpHHA4Qa8fvOIQ=w420-h152-no?authuser=0" alt="logo" height="300" />
+                <p>Premium Gifts and Florist, handmade in KK, Sabah.</p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <!--
+                    <li>
+                        <a href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Magna veroeros</a></li>
+                            <li><a href="#">Etiam nisl</a></li>
+                            <li>
+                                <a href="#">Sed consequat</a>
+                                <ul>
+                                    <li><a href="#">Lorem dolor</a></li>
+                                    <li><a href="#">Amet consequat</a></li>
+                                    <li><a href="#">Magna phasellus</a></li>
+                                    <li><a href="#">Etiam nisl</a></li>
+                                    <li><a href="#">Sed feugiat</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nisl tempus</a></li>
+                        </ul>
+                    </li>
+                    -->
+                    <li><a asp-area="" asp-controller="Home" asp-action="Flowers">Flowers</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+
+    <!-- Main -->
+    <section id="main" class="wrapper style2">
+        <div class="title">Left Sidebar</div>
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-2 col-12-medium">
+
+                    <!-- Sidebar -->
+                    <div id="sidebar">
+                        <section class="box">
+                            <header>
+                                <h2>Magna diam vehicula</h2>
+                            </header>
+                            <ul class="style3">
+                                <li><a href="#">Nulla iaculis</a></li>
+                                <li><a href="#">Augue massa</a></li>
+                                <li><a href="#">Orci sem</a></li>
+                                <li><a href="#">Sed hendrerit</a></li>
+                                <li><a href="#">Turpis vel</a></li>
+                                <li><a href="#">Dapibus mi </a></li>
+                                <li><a href="#">Sed hendrerit</a></li>
+                            </ul>
+                        </section>
+                    </div>
+
+                </div>
+                <div class="col-10 col-12-medium imp-medium">
+                    <!-- Features -->
+                    <section id="features">
+                        <header class="style1">
+                            <h2>Dolor consequat feugiat amet veroeros</h2>
+                            <p>Feugiat dolor nullam orci pretium phasellus justo</p>
+                        </header>
+                        <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+                            @foreach (var item in Model)
+                            {
+                                <div>
+                                    <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+                                        <img src="@item?.Image?[0]" alt="Flowers" height="300" />
+                                        <h3 class="uk-card-title">@item.Name</h3>
+                                        <p class="uk-card-title">@item.Price</p>
+                                        <li><a href="#" class="button style1 small">Get Started</a></li>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <ul class="actions special">
+                            <li><a href="#" class="button style1 large">Get Started</a></li>
+                            <li><a href="#" class="button style2 large">More Info</a></li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </div>
-    }
-</div>
+    </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.dropotron.min.js"></script>
+    <script src="~/js/browser.min.js"></script>
+    <script src="~/js/breakpoints.min.js"></script>
+    <script src="~/js/util.js"></script>
+    <script src="~/js/main.js"></script>
+
+</body>
+</html>
