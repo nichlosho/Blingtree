@@ -1,18 +1,6 @@
-﻿@model IEnumerable<Item>
-
+﻿
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="card" style="width: 18rem;">
-    @foreach (var item in Model)
-    {
-        <img class="card-img-top" src="@item.Image[0]" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">@item.Name</h5>
-            <p class="card-text">@item.Description</p>
-            <p class="card-text">@item.Price</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    }
-</div>
+

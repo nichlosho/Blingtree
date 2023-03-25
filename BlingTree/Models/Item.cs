@@ -10,19 +10,19 @@ namespace BlingTree.Models
         public int ID { get; set; }
 
         [JsonPropertyName("Category")]
-        public string Category { get; set; }
+        public string Category { get; set; } = "";
 
         [JsonPropertyName("Name")]
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
 
         [JsonPropertyName("Description")]
-        public string Description { get; set; }
+        public string Description { get; set; } = "";
 
         [JsonPropertyName("Image")]
-        public string[] Image { get; set; }
+        public string[]? Image { get; set; }
 
         [JsonPropertyName("Price")]
-        public int Price { get; set; }
+        public string Price { get; set; } = "";
 
         public override string ToString() => JsonSerializer.Serialize(this);
     }

@@ -17,13 +17,13 @@ namespace BlingTree.Controllers
 
         public IActionResult Index()
         {
-            var items = itemService.GetAllData();
-            return View(items);
+            return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Flowers()
         {
-            return View();
+            var items = itemService.GetAllData();
+            return View(items);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
