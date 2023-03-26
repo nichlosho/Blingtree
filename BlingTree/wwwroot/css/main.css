@@ -2081,7 +2081,7 @@ ul.actions {
     justify-content: center;
     position: relative;
     height: 24em;
-    background-image: url('~/css//images/Banner.jpg');
+    background-image: url("../css/images/Banner.jpg");
     background-size: cover;
     padding: 0;
 }

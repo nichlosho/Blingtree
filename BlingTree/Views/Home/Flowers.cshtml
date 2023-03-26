@@ -36,7 +36,7 @@
                         {
                             <div>
                                 <div class="uk-card uk-card-default uk-card-body uk-card-hover">
-                                    <img src="@item?.Image?[0]" alt="Flowers" height="100" />
+                                    <img src="~/css/images/@item?.Image?[0]" alt="Flowers" height="100" />
                                     <h3 class="uk-card-title">@item.Name</h3>
                                     <p class="uk-card-title">@item.Price</p>
                                     <li><a asp-area="" asp-controller="Home" asp-action="FlowerDetails" asp-route-id="@item.ID" class="button style1 small">More details</a></li>
