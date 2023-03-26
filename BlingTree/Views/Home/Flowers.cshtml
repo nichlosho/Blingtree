@@ -31,7 +31,7 @@
             <div class="col-10 col-12-medium">
                 <!-- Features -->
                 <section id="features">
-                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+                    <div class="uk-grid-column-small uk-grid-row-large uk-grid-match uk-child-width-1-3@s uk-child-width-1-3@s uk-text-center" uk-grid>
                         @foreach (var item in Model)
                         {
                             <div>
@@ -39,7 +39,7 @@
                                     <img src="~/css/images/@item?.Image?[0]" alt="Flowers" height="100" />
                                     <h3 class="uk-card-title">@item.Name</h3>
                                     <p class="uk-card-title">@item.Price</p>
-                                    <li><a asp-area="" asp-controller="Home" asp-action="FlowerDetails" asp-route-id="@item.ID" class="button style1 small">More details</a></li>
+                                    <a asp-area="" asp-controller="Home" asp-action="FlowerDetails" asp-route-id="@item.ID" class="button style1 small">More details</a>
                                 </div>
                             </div>
                         }
