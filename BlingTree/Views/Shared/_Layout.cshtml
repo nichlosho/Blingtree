@@ -82,7 +82,7 @@
                                 </section>
                             </div>
                             <div class="col-6 col-12-small">
-                                <section>
+                                <section style="margin-bottom:40px;">
                                     <h3 class="icon solid fa-phone">WhatsApp</h3>
                                     <p>
                                         <a href="http://wa.link/zadzlz" class="button style2 large">Open WhatsApp</a>
@@ -91,26 +91,25 @@
                             </div>
                         </div>
                     </section>
-
                 </div>
             </div>
         </section>
-
-        <!-- UIkit JS -->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit-icons.min.js"></script>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-
-        <!-- Scripts -->
-        <script src="~/js/jquery.min.js"></script>
-        <script src="~/js/jquery.dropotron.min.js"></script>
-        <script src="~/js/browser.min.js"></script>
-        <script src="~/js/breakpoints.min.js"></script>
-        <script src="~/js/util.js"></script>
-        <script src="~/js/main.js"></script>
-        @await RenderSectionAsync("Scripts", required: false)
     </div>
 </body>
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit-icons.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<!-- Scripts -->
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/jquery.dropotron.min.js"></script>
+<script src="~/js/browser.min.js"></script>
+<script src="~/js/breakpoints.min.js"></script>
+<script src="~/js/util.js"></script>
+<script src="~/js/main.js"></script>
+@await RenderSectionAsync("Scripts", required: false)
 </html>

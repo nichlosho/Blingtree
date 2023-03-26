@@ -1,6 +1,8 @@
 ﻿@model Item;
 @{
     ViewData["Title"] = "Flower Details";
+    var currentUrl = $"{ViewContext.HttpContext.Request.Scheme}://{ViewContext.HttpContext.Request.Host}{ViewContext.HttpContext.Request.Path}{ViewContext.HttpContext.Request.QueryString}";
+    string whatsAppLink = "http://wa.me/60168441492/?text=Hi,%20I%20am%20interested%20in%20this%20flower%20bouquet.%20" + currentUrl;
 }
 
 <!DOCTYPE html>
@@ -55,7 +57,7 @@
                     <p style="font-style:italic; font-size:smaller"> *Customizations may be available. Contact us for more details.</p>
                     <!--  https://wa.me/whatsappphonenumber/?text=Hi,%20I%20am%20interested%20in%20this%20flower%20bouquet.%20www.google.com  -->
                     <p>
-                        <a href="http://wa.link/zadzlz/?text=Hi,%20I%20am%20interested%20in%20this%20flower%20bouquet.%20www.google.com" class="button style1 large">
+                        <a href="@whatsAppLink" class="button style1 large">
                             Contact Us
                         </a>
                     </p>
