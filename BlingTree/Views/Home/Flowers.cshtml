@@ -70,7 +70,7 @@
                                         <img src="@item?.Image?[0]" alt="Flowers" height="100" />
                                         <h3 class="uk-card-title">@item.Name</h3>
                                         <p class="uk-card-title">@item.Price</p>
-                                        <li><a href="#" class="button style1 small">More details</a></li>
+                                        <li><a asp-area="" asp-controller="Home" asp-action="FlowerDetails" asp-route-id="@item.ID" class="button style1 small">More details</a></li>
                                     </div>
                                 </div>
                             }
