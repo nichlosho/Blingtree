@@ -2,7 +2,7 @@
 {
     public enum Category
     {
-        All flowers = 0,
+        All = 0,
         Celebrations = 1,
         Valentines = 2,
         Mixed = 3,
