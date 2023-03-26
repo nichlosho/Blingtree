@@ -10,7 +10,7 @@ namespace BlingTree.Models
         public int ID { get; set; }
 
         [JsonPropertyName("Category")]
-        public string Category { get; set; } = "";
+        public int Category { get; set; } = 0;
 
         [JsonPropertyName("Name")]
         public string Name { get; set; } = "";

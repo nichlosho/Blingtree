@@ -1,225 +1,125 @@
-﻿
-<!DOCTYPE HTML>
-@{
+﻿@{
     ViewData["Title"] = "Home";
 }
-<html>
-<head>
-    <title>Escape Velocity by HTML5 UP</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="~/css/main.css" />
-</head>
-<body class="homepage is-preload">
-    <div id="page-wrapper">
+<div id="page-wrapper">
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1">
+        <div class="title">Who we are</div>
+        <div class="container">
+            <p class="style1"> Premium Gifts Crafter</p>
+            <p class="style3">
+                We specialize in limited collections of handmade Premium gifts and flowers.
+                We also collaborate with customers to customize and create unique items best represent their love.
+            </p>
+            <ul class="actions">
+                <li><a asp-area="" asp-controller="Home" asp-action="Flowers" class="button style3 large">Shop flower bouquet</a></li>
+            </ul>
+        </div>
+    </section>
 
-        <!-- Header -->
-        <section id="header" class="wrapper">
+    <!-- Main -->
+    <section id="main" class="wrapper style2">
+        <div class="title">The Details</div>
+        <div class="container">
 
-            <!-- Logo -->
-            <div id="logo">
-                <img src="https://lh3.googleusercontent.com/2RhcPn9zYXmVUoXPAp7H-97OS7Wj6qJoiJOzb4GS7Q3YVJKhWFi5Q_H6aK4eYDcyVXVHn6cFSJZ7F2XmKo-WSHRehud3J8bD80XpnRoMqSZW_o8f909dSO6MxB_VSSovCBJKGh3CbPkGI8J8rPG9V51-r7btbnZN7RXIp9QB5rZGwxsixjAHOzdw03Xzq2MbvNdvvUVl3p9qPEhU0tITrPbsv-cJWD-71_0pxpnwBNWagTeWFxo8l70R3D-lGr-m08rZ5lfCUopBckas6YNmRsGdXpLfMr-LDfrGJANznsEP84qMwauuDxovsC6eQ1RLFLxqigBQTxEMiMnV1UR_EoFxr4yrNL-EsYgEWeJfdgPr2ArGSGYN2EbikV8N43lT0UiptRSpSh4DztSemf7kkDMGisKl9wb_5SzmDcKyyKCRH-nCEYYfsevtp2TBUsJVjjTd0L0hV1JOuL2ISKjrIolCMgW0LVAQ2g0na_OMQGs3_3r12YfOE3pzKGiazeC9AjIvHRU4wPlTicjWn8SCzwNfWn-l0XTVd10P5LNrfozZlplNkjHK-xpJANZuO3HAjYOyLxq-Ac3rohqzEJJti9Awnb-aQz8hovBccUm-hD1A2VwGEuXObtf8ONxKgacbU7Pu7XyJczP-9Y3dOqJ8tibYQnntk2avV0BmXk_QWOI7Yd_HG3Fs2gphSVCxMP21jRTDZbtGDG1GnCe6DyjNh7hO9yjQwbmhLod91XbpgwOqNXtYWJODMonVvtakEcVptLo0QhvhCIahuaHwP4GM94GMGYVULlMibA1dBVg9upDR0CmE8Qk4kPqnfpe_X6OJ_9hy3UULuNP9LxrpXN3bmJUYoZyBJuGJdqYOcgT-lMEjejDMB9Qm5cJuOPsiulTCnwi2SAszTpCctVRCZS1MjvT-Ik9-YXIN9lEHKpHHA4Qa8fvOIQ=w420-h152-no?authuser=0" alt="logo" height="300" />
-                <p>Premium Gifts and Florist, handmade in KK, Sabah.</p>
-            </div>
+            <!-- Image -->
+            <a href="#" class="image featured">
+                <img src="images/pic01.jpg" alt="" />
+            </a>
 
-            <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li class="current"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <!--
-                    <li>
-                        <a href="#">Dropdown</a>
-                        <ul>
-                            <li><a href="#">Lorem ipsum</a></li>
-                            <li><a href="#">Magna veroeros</a></li>
-                            <li><a href="#">Etiam nisl</a></li>
-                            <li>
-                                <a href="#">Sed consequat</a>
-                                <ul>
-                                    <li><a href="#">Lorem dolor</a></li>
-                                    <li><a href="#">Amet consequat</a></li>
-                                    <li><a href="#">Magna phasellus</a></li>
-                                    <li><a href="#">Etiam nisl</a></li>
-                                    <li><a href="#">Sed feugiat</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Nisl tempus</a></li>
-                        </ul>
-                    </li>
-                    -->
-                    <li><a asp-area="" asp-controller="Home" asp-action="Flowers">Flowers</a></li>
-                    <li><a href="#footer">About Us</a></li>
-                </ul>
-            </nav>
-
-        </section>
-
-        <!-- Intro -->
-        <section id="intro" class="wrapper style1">
-            <div class="title">Who we are</div>
-            <div class="container">
-                <p class="style1"> Premium Gifts Crafter</p>
-                <p class="style3">
-                    We specialize in limited collections of handmade Premium gifts and flowers.
-                    We also collaborate with customers to customize and create unique items best represent their love.
-                </p>
-                <ul class="actions">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Flowers" class="button style3 large">Shop flower bouquet</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Main -->
-        <section id="main" class="wrapper style2">
-            <div class="title">The Details</div>
-            <div class="container">
-
-                <!-- Image -->
-                <a href="#" class="image featured">
-                    <img src="images/pic01.jpg" alt="" />
-                </a>
-
-                <!-- Features -->
-                <section id="features">
-                    <header class="style1">
-                        <h2>Dolor consequat feugiat amet veroeros</h2>
-                        <p>Feugiat dolor nullam orci pretium phasellus justo</p>
-                    </header>
-                    <div class="feature-list">
-                        <div class="row">
-                            <div class="col-6 col-12-medium">
-                                <section>
-                                    <h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-                                    <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                </section>
-                            </div>
-                            <div class="col-6 col-12-medium">
-                                <section>
-                                    <h3 class="icon solid fa-sync">Lorem ipsum dolor sit veroeros</h3>
-                                    <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                </section>
-                            </div>
-                            <div class="col-6 col-12-medium">
-                                <section>
-                                    <h3 class="icon fa-image">Pretium phasellus justo lorem</h3>
-                                    <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                </section>
-                            </div>
-                            <div class="col-6 col-12-medium">
-                                <section>
-                                    <h3 class="icon solid fa-cog">Tempus sed pretium orci</h3>
-                                    <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                </section>
-                            </div>
-                            <div class="col-6 col-12-medium">
-                                <section>
-                                    <h3 class="icon solid fa-wrench">Aliquam consequat et feugiat</h3>
-                                    <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                </section>
-                            </div>
-                            <div class="col-6 col-12-medium">
-                                <section>
-                                    <h3 class="icon solid fa-check">Dolore laoreet aliquam mattis</h3>
-                                    <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                </section>
-                            </div>
+            <!-- Features -->
+            <section id="features">
+                <header class="style1">
+                    <h2>Dolor consequat feugiat amet veroeros</h2>
+                    <p>Feugiat dolor nullam orci pretium phasellus justo</p>
+                </header>
+                <div class="feature-list">
+                    <div class="row">
+                        <div class="col-6 col-12-medium">
+                            <section>
+                                <h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <section>
+                                <h3 class="icon solid fa-sync">Lorem ipsum dolor sit veroeros</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <section>
+                                <h3 class="icon fa-image">Pretium phasellus justo lorem</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <section>
+                                <h3 class="icon solid fa-cog">Tempus sed pretium orci</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <section>
+                                <h3 class="icon solid fa-wrench">Aliquam consequat et feugiat</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <section>
+                                <h3 class="icon solid fa-check">Dolore laoreet aliquam mattis</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+                            </section>
                         </div>
                     </div>
-                </section>
-            </div>
-        </section>
-
-        <!-- Highlights -->
-        <section id="highlights" class="wrapper style3">
-            <div class="title">How to order</div>
-            <div class="container">
-                <div class="row aln-center">
-                    <div class="col-4 col-12-medium">
-                        <section class="highlight">
-                            <img src="images/pic02.jpg" alt="" />
-                            <h3>1. Call us on WhatsApp</h3>
-                            <p>
-                                Please reach out to us via WhatsApp with your name along with the bouquet or gifts you are interested.<br />
-                                <a href="http://wa.link/zadzlz">Click here to open WhatsApp</a>
-                            </p>
-                        </section>
-                    </div>
-                    <div class="col-4 col-12-medium">
-                        <section class="highlight">
-                            <img src="images/pic02.jpg" alt="" />
-                            <h3>2. Let us know your special occasions</h3>
-                            <p>All our gifts are customizable to your needs. Let us know if you have any special requests.</p>
-                        </section>
-                    </div>
-                    <div class="col-4 col-12-medium">
-                        <section class="highlight">
-                            <img src="images/pic02.jpg" alt="" />
-                            <h3>3. Set your pickup date!</h3>
-                            <p>Once your pickup date is confirmed, your gift will be made for ready to pick up!</p>
-                        </section>
+                    <!-- Images -->
+                    <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true" style="margin-top:100px;">
+                        <div>
+                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 440px">Item</div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 500px">Item</div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 550px">Item</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <section id="footer" class="wrapper">
-            <div class="title">Contact Us!</div>
-            <div class="container">
-                <div class="row">
-                    <!-- Contact -->
-                    <section class="feature-list small">
-                        <div class="row">
-                            <div class="col-6 col-12-small">
-                                <section>
-                                    <h3 class="icon solid fa-home">Store Address</h3>
-                                    <p>
-                                        Taman mestra lot 50, <br />
-                                        GF Jalan Kk Hight School Penampang lama, <br />
-                                        Kota Kinabalu, Malaysia
-                                    </p>
-                                </section>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <section>
-                                    <h3 class="icon solid fa-comment">Social</h3>
-                                    <p>
-                                        <a href="https://www.facebook.com/people/Bling-Tree-Premium-Gifts-and-Florist/100063624906407/">FaceBook</a><br />
-                                        <a href="https://www.instagram.com/bling.tree/">Instagram</a>
-                                    </p>
-                                </section>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <section>
-                                    <h3 class="icon solid fa-envelope">Phone</h3>
-                                    <p>
-                                        +60 17-836 6149
-                                    </p>
-                                </section>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <section>
-                                    <h3 class="icon solid fa-phone">WhatsApp</h3>
-                                    <p>
-                                        <a href="http://wa.link/zadzlz" class="button style2 large">Open WhatsApp</a>
-                                    </p>
-                                </section>
-                            </div>
-                        </div>
+    <!-- Highlights -->
+    <section id="highlights" class="wrapper style3">
+        <div class="title">How to order</div>
+        <div class="container">
+            <div class="row aln-center">
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <img src="images/pic02.jpg" alt="" />
+                        <h3>1. Call us on WhatsApp</h3>
+                        <p>
+                            Please reach out to us via WhatsApp with your name along with the bouquet or gifts you are interested.<br />
+                            <a href="http://wa.link/zadzlz">Click here to open WhatsApp</a>
+                        </p>
                     </section>
-
+                </div>
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <img src="images/pic02.jpg" alt="" />
+                        <h3>2. Let us know your special occasion</h3>
+                        <p>All our gifts are customizable to your needs. Let us know if you have any special requests.</p>
+                    </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <img src="images/pic02.jpg" alt="" />
+                        <h3>3. Set your pickup date!</h3>
+                        <p>Once your pickup date is confirmed, your gift will be made for ready to pick up!</p>
+                    </section>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+</div>
 
-    <!-- Scripts -->
-    <script src="~/js/jquery.min.js"></script>
-    <script src="~/js/jquery.dropotron.min.js"></script>
-    <script src="~/js/browser.min.js"></script>
-    <script src="~/js/breakpoints.min.js"></script>
-    <script src="~/js/util.js"></script>
-    <script src="~/js/main.js"></script>
-
-</body>
-</html>

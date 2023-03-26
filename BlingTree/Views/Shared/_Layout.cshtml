@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>@ViewData["Title"] - BlingTree Gifts</title>
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/css/uikit.min.css" />
@@ -10,20 +10,99 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BlingTree.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" />
 </head>
-<body>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <section id="header" class="wrapper">
+            <!-- Logo -->
+            <div id="logo">
+                <img src="https://lh3.googleusercontent.com/2RhcPn9zYXmVUoXPAp7H-97OS7Wj6qJoiJOzb4GS7Q3YVJKhWFi5Q_H6aK4eYDcyVXVHn6cFSJZ7F2XmKo-WSHRehud3J8bD80XpnRoMqSZW_o8f909dSO6MxB_VSSovCBJKGh3CbPkGI8J8rPG9V51-r7btbnZN7RXIp9QB5rZGwxsixjAHOzdw03Xzq2MbvNdvvUVl3p9qPEhU0tITrPbsv-cJWD-71_0pxpnwBNWagTeWFxo8l70R3D-lGr-m08rZ5lfCUopBckas6YNmRsGdXpLfMr-LDfrGJANznsEP84qMwauuDxovsC6eQ1RLFLxqigBQTxEMiMnV1UR_EoFxr4yrNL-EsYgEWeJfdgPr2ArGSGYN2EbikV8N43lT0UiptRSpSh4DztSemf7kkDMGisKl9wb_5SzmDcKyyKCRH-nCEYYfsevtp2TBUsJVjjTd0L0hV1JOuL2ISKjrIolCMgW0LVAQ2g0na_OMQGs3_3r12YfOE3pzKGiazeC9AjIvHRU4wPlTicjWn8SCzwNfWn-l0XTVd10P5LNrfozZlplNkjHK-xpJANZuO3HAjYOyLxq-Ac3rohqzEJJti9Awnb-aQz8hovBccUm-hD1A2VwGEuXObtf8ONxKgacbU7Pu7XyJczP-9Y3dOqJ8tibYQnntk2avV0BmXk_QWOI7Yd_HG3Fs2gphSVCxMP21jRTDZbtGDG1GnCe6DyjNh7hO9yjQwbmhLod91XbpgwOqNXtYWJODMonVvtakEcVptLo0QhvhCIahuaHwP4GM94GMGYVULlMibA1dBVg9upDR0CmE8Qk4kPqnfpe_X6OJ_9hy3UULuNP9LxrpXN3bmJUYoZyBJuGJdqYOcgT-lMEjejDMB9Qm5cJuOPsiulTCnwi2SAszTpCctVRCZS1MjvT-Ik9-YXIN9lEHKpHHA4Qa8fvOIQ=w420-h152-no?authuser=0" alt="logo" height="300" />
+                <p>Premium Gifts and Florist, handmade in KK, Sabah.</p>
+            </div>
 
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit-icons.min.js"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Flowers">Flowers</a></li>
+                    <li><a href="#footer">About Us</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div>
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <section id="footer" class="wrapper">
+            <div class="title">Contact Us!</div>
+            <div class="container">
+                <div class="row">
+                    <!-- Contact -->
+                    <section class="feature-list small">
+                        <div class="row">
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-home">Store Address</h3>
+                                    <p>
+                                        Taman mestra lot 50, <br />
+                                        GF Jalan Kk Hight School Penampang lama, <br />
+                                        Kota Kinabalu, Malaysia
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-comment">Social</h3>
+                                    <p>
+                                        <a href="https://www.facebook.com/people/Bling-Tree-Premium-Gifts-and-Florist/100063624906407/">FaceBook</a><br />
+                                        <a href="https://www.instagram.com/bling.tree/">Instagram</a>
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-envelope">Phone</h3>
+                                    <p>
+                                        +60 17-836 6149
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-phone">WhatsApp</h3>
+                                    <p>
+                                        <a href="http://wa.link/zadzlz" class="button style2 large">Open WhatsApp</a>
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit-icons.min.js"></script>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        <!-- Scripts -->
+        <script src="~/js/jquery.min.js"></script>
+        <script src="~/js/jquery.dropotron.min.js"></script>
+        <script src="~/js/browser.min.js"></script>
+        <script src="~/js/breakpoints.min.js"></script>
+        <script src="~/js/util.js"></script>
+        <script src="~/js/main.js"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </div>
 </body>
 </html>

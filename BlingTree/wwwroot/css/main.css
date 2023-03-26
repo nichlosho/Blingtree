@@ -181,7 +181,7 @@ p, ul, ol, dl, table, blockquote, form {
 .container {
     margin: 0 auto;
     max-width: 100%;
-    width: 90em;
+    width: 75em;
 }
 
 @media screen and (max-width: 1680px) {
@@ -1735,6 +1735,33 @@ button,
         button.style3:active,
         .button.style3:active {
             background-color: #1f232b;
+        }
+
+    input[type="button"].style4,
+    input[type="submit"].style4,
+    input[type="reset"].style4,
+    button.style4,
+    .button.style4 {
+        background: none;
+        color: #606167;
+        box-shadow: inset 0px 0px 2px 0px #a0a1a7;
+    }
+
+        input[type="button"].style4:hover,
+        input[type="submit"].style4:hover,
+        input[type="reset"].style4:hover,
+        button.style2:hover,
+        .button.style2:hover {
+            box-shadow: inset 0px 0px 2px 0px #606167;
+            background-color: #3f434b;
+        }
+
+        input[type="button"].style4:active,
+        input[type="submit"].style4:active,
+        input[type="reset"].style4:active,
+        button.style4:active,
+        .button.style4:active {
+            box-shadow: inset 0px 0px 2px 0px #202127;
         }
 
 /* List */
