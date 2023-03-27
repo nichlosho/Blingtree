@@ -2,6 +2,7 @@
 @using BlingTree.Models.ENUM
 @{
     ViewData["Title"] = "Flowers";
+    string category = Context.Request.Query["category"];
 }
 <!-- Main -->
 <section id="main" class="wrapper style2">
@@ -18,11 +19,7 @@
                         <ul class="style3">
                             @foreach (Category value in Enum.GetValues(typeof(Category)))
                             {
-                                if (@value == 0)
-                                {
-                                    continue;
-                                }
-                                <li><a href="#">@value</a></li>
+                                <li><a href="/Home/Flowers?page=1&category=@(Convert.ToInt32(value))">@value</a></li>
                             }
                         </ul>
                     </section>
@@ -48,4 +45,8 @@
             </div>
         </div>
     </div>
+    <ul class="uk-pagination uk-flex-center" style="margin-top:80px;">
+        <li style="margin-right:80px;"><a href="/Home/Flowers?category=@category&page=2"><span uk-pagination-previous></span> Previous</a></li>
+        <li><a href="/Home/Flowers?category=@category&page=2">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    </ul>
 </section>

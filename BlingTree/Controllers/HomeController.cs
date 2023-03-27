@@ -1,6 +1,7 @@
 ﻿using BlingTree.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Reflection;
 
 namespace BlingTree.Controllers
 {
@@ -8,7 +9,8 @@ namespace BlingTree.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         public ItemService itemService { get; }
-        private List<Item> flowersList { get; set; }
+        public List<Item> flowersList { get; set; }
+        public int itemsPerPage = 15;
         public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env)
         {
             _logger = logger;
@@ -20,9 +22,17 @@ namespace BlingTree.Controllers
             return View();
         }
 
-        public IActionResult Flowers()
+        public IActionResult Flowers(int category, int page)
         {
-            flowersList = itemService.GetAllData().ToList();
+            //add next prev paging
+            if (category == 0)
+            {
+                flowersList = itemService.GetAllData().ToList();
+            }
+            else
+            {
+                flowersList = itemService.GetAllData().Where(x => x.Category == category).ToList();
+            }
             return View(flowersList);
         }
 
